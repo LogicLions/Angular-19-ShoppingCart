@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class CartComponent {
 
+  ngOnInit(){
+    console.log('cart component');
+    
+  }
 }

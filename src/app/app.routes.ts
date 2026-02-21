@@ -3,6 +3,7 @@ import { ProductListComponent } from './product/product-list/product-list.compon
 import { CartComponent } from './cart/cart.component';
 
 export const routes: Routes = [
+    {path:'', component: ProductListComponent},
     {path: 'product-list', component: ProductListComponent},
     {path: 'cart', component: CartComponent}
 ];

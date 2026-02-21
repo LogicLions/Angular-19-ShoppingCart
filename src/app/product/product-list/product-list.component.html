@@ -1,15 +1,19 @@
 <div style="text-align: end;" class="dropdown">
   <button class="dropbtn">Choose Category</button>
   <div class="dropdown-content">
-    <a href="#">Electronics</a>
-    <a href="#">Clothes</a>
+    <a>Electronics</a>
+    <a>Clothes</a>
   </div>
 </div>
+
 <div class="product-container">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
+  @for(item of productList; track item.id)
+  {
+    <div style="text-align: center;">
+      <img src="{{item.imgUrl}}" width="30%" height="30%" alt="product"> 
+      
+      <h3>{{item.name}}</h3>
+      <p>{{item.description}}</p>
+    </div>
+  }   
 </div>

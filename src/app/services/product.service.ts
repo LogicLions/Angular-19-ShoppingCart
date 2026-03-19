@@ -13,6 +13,8 @@ export class ProductService {
 
   fetchProducts(): Observable<product[]>
   {
+    console.log('service');
+    
     return this.httpClient.get<product[]>(this.url);
   }
 }

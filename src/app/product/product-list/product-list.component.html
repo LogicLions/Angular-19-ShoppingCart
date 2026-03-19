@@ -7,7 +7,7 @@
 </div>
 
 <div class="product-container">
-  @for(item of productList; track item.id)
+  @for(item of productList$ | async; track item.id)
   {
     <div style="text-align: center;">
       <img src="{{item.imgUrl}}" width="30%" height="30%" alt="product"> 
